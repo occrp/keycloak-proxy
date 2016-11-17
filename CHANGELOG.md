@@ -2,10 +2,15 @@
 #### **2.0.0**
 
 FEATURES:
- * Adding the --skip-openid-provider-tls-verify option to bypass the TLS verification for Idp
+ * Adding the --skip-openid-provider-tls-verify option to bypass the TLS verification for Idp [#PR147](https://github.com/gambol99/keycloak-proxy/pull/147)
+ * Changed the provider config you use a timeout rather than attempts [#PR153](https://github.com/gambol99/keycloak-proxy/pull/153)
+ * Adding support for pprof profile via the --enable-profiling option [#PR156](https://github.com/gambol99/keycloak-proxy/pull/156)
+ * Adding support for User Managed Access (UMA)
+ *
 
 FIXES:
  * Fixed the --headers and --tags command line options, had a typo on the mergeMaps method
+ * Changed some the methods to use http.Request rather than gin.Context [#PR154](https://github.com/gambol99/keycloak-proxy/pull/154)
 
 BREAKING CHANGES:
  * The login handler by default has been switched off, you must enable for --enable-login-handler
